@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+[container] {
+    border: 1px dashed black;
+    width: 800px;
+    margin: 25px auto;
+    height: auto;
+    background-color: gray;
+    z-index: 1;
+}
