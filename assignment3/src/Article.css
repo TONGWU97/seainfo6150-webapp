@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    padding: 2px;
+    margin: 2px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 24px;
+    text-align: left;
+}
+
+div {
+    text-align: center;
+}
