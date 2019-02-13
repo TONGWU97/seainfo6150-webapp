@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 class ArticleTableRow extends React.Component {
     constructor(props) {
         super(props);
-        this.title = props.title;
-        this.author = props.author;
-        this.date = props.date;
-        this.shortText = props.shortText;
+        
         this.state = {
-            selected: false
+            selected: false,
+            title:this.props.title,
+            author:this.props.author,
+            date:this.props.date,
+            shortText:this.props.shortText
         };
     }
 
@@ -34,11 +35,11 @@ class ArticleTableRow extends React.Component {
         //
         return (
                 <tr align="center">
-                  <td align="left"> <input type="checkbox" onClick= {this.onClick.bind(this)}/> {this.title} </td>
+                  <td align="left"> <input type="checkbox" onClick= {this.onClick.bind(this)}/> {this.props.title} </td>
                   <td> {selectedStatus} </td>
-                  <td> <a rel={this.author} href= "/author"> {this.author} </a> </td>
-                  <td> <time datetime= {this.date}> {this.date} </time> </td>
-                  <td> {this.shortText} </td>
+                  <td> <address><a rel={this.props.author} href= "/author"> {this.props.author} </a></address> </td>
+                  <td> <time datetime= {this.props.date}> {this.props.date} </time> </td>
+                  <td> {this.props.shortText} </td>
                 </tr> 
         );
     }
