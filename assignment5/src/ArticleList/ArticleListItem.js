@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './ArticleListItem.module.css';
+import styles from './ArticleListItem.module.css';
 
 class ArticleListItem extends React.Component{
     constructor (props) {
@@ -16,14 +16,13 @@ class ArticleListItem extends React.Component{
 
     render() {
         return(
-            <div group="boxgroup">
-            <ul>
-                <li> <h4> {this.props.title} </h4> </li>
-                <li> <p> {this.props.shortText} </p> </li>
-                <li> <a rel="{this.props.author}" href="/author"> By: {this.props.author} </a> </li>
-                <li> <time dateTime={this.props.date}> {this.props.date} </time> </li>
-            </ul>
-            </div>
+            <li className={styles.boxgroup}>
+                <h4> {this.props.title} </h4>
+                <p> {this.props.shortText} </p>
+                <a rel="{this.props.author}" href="/author"> By: {this.props.author} </a>
+                <br/>
+                <time dateTime={this.props.date}> {this.props.date} </time>
+            </li>
         );
     }
 }

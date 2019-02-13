@@ -3,12 +3,9 @@
     padding: 0;
 }
 
-ul li {
+.boxgroup {
     list-style: none;
-}
-
-[group] {
-    border: 1px solid red;
+    border: 2px solid red;
     width: 580px;
     height: auto;
     margin: 20px auto;
