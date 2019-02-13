@@ -4,6 +4,7 @@ import ArticleListItem from './ArticleListItem.js';
 import './ArticleList.module.css';
 
 let ArticleList = ({ articles }) => (
+  <list>
   <div container="container">
   {
     // this iterates through the articles JSON and
@@ -20,6 +21,7 @@ let ArticleList = ({ articles }) => (
     })
   }
   </div>
+  </list>
 );
 
 ArticleList.propTypes = {
