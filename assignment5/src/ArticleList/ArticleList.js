@@ -4,7 +4,7 @@ import ArticleListItem from './ArticleListItem.js';
 import styles from './ArticleList.module.css';
 
 let ArticleList = ({ articles }) => (
-  <div className={styles.container}>
+  <div className={styles.article_list}>
   <ul>
   {
     // this iterates through the articles JSON and
@@ -17,6 +17,7 @@ let ArticleList = ({ articles }) => (
         year={article.pubYear}
         author={article.author}
         shortText={article.shortText}
+        url={article.image._url}
       />
     })
   }

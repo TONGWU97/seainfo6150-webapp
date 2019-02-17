@@ -3,11 +3,13 @@
     padding: 0;
 }
 
-.container {
-    border: 1px dashed black;
+.article_list {
+    border: 1px dashed #666666;
+    border-radius: 10px 10px;
     width: 800px;
     margin: 25px auto;
     height: auto;
-    background-color: gray;
+    background-color: #999999;
     z-index: 1;
+    box-shadow: 6px 10px 12px #6A6A6A;
 }
