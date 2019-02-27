@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import styles from './ArticleListItem.module.css';
 import ArticleImage from './ArticleImage.js';
 
-class ArticleListItem extends React.Component{
-    constructor (props) {
+class ArticleListItem extends React.Component {
+    constructor(props) {
         super(props);
         this.state = {
             title: this.props.title,
@@ -17,19 +17,24 @@ class ArticleListItem extends React.Component{
     }
 
     render() {
-        return(
-        <div>
-            <li className={styles.boxgroup} id={styles.bgcolor}>
-                <ArticleImage url={this.state.url} title={this.state.title}/>
-                <div className={styles.textbox}>
-                <h4> {this.props.title} </h4>
-                <p> {this.props.shortText} </p>
+        return (
+            <div>
+                <div className={styles.boxgroup} id={styles.bgcolor}>
+                    <div className={styles.image}>
+                        <ArticleImage url={this.state.url} title={this.state.title} />
+                    </div>
+                    <div className={styles.contentbox}>
+                        <div>
+                            <h4 className={styles.title}> {this.props.title} </h4>
+                            <p className={styles.shortText}> {this.props.shortText} </p>
+                        </div>
+                    </div>
+                    <div className={styles.author_time}>
+                        <address className={styles.author}> By: {this.props.author} </address>
+                        <time dateTime={this.props.date}> {this.props.date} </time>
+                    </div>
                 </div>
-                <a rel={this.props.author} href="/author"> By: {this.props.author} </a>
-                <br/>
-                <time dateTime={this.props.date}> {this.props.date} </time>
-            </li>
-        </div>
+            </div>
         );
     }
 }

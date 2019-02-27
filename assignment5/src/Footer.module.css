@@ -1,0 +1,22 @@
+.footer {
+    width: 80%;
+    height: 8rem;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: #C90813;
+    margin-top: 1rem;
+    font-family: sans-serif;
+}
+
+.author {
+    margin-top: 0.8rem;
+    font-style: normal;
+}
+
+p {
+    margin-left: 0.8rem;
+    margin-top: 0.8rem;
+}
+

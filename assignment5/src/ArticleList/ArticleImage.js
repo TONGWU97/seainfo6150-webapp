@@ -13,8 +13,8 @@ class ArticleImage extends React.Component{
 
     render() {
         return (
-            <div className={styles.imagebox}>
-                <img src={this.state.url} alt={this.state.title} title={this.state.title}/>
+            <div>
+                <img className={styles.imagebox} src={this.state.url} alt={this.state.title} title={this.state.title}/>
             </div>
         );
     }
