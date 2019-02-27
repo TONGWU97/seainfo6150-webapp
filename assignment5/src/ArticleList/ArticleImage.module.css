@@ -1,6 +1,6 @@
 .imagebox {
     text-align: center;
-    width: 55%;
+    max-width: 55%;
     height: auto;
     border: 0.4rem solid #C90813;
     border-radius: 50%/50%; 

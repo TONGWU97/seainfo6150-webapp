@@ -18,7 +18,6 @@ class ArticleListItem extends React.Component {
 
     render() {
         return (
-            <div>
                 <div className={styles.boxgroup} id={styles.bgcolor}>
                     <div className={styles.image}>
                         <ArticleImage url={this.state.url} title={this.state.title} />
@@ -34,7 +33,6 @@ class ArticleListItem extends React.Component {
                         <time dateTime={this.props.date}> {this.props.date} </time>
                     </div>
                 </div>
-            </div>
         );
     }
 }
