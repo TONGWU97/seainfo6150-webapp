@@ -1,0 +1,9 @@
+.imagebox {
+    text-align: center;
+    max-width: 55%;
+    height: auto;
+    border: 0.4rem solid #C90813;
+    border-radius: 50%/50%; 
+    box-shadow: 0 0.6rem 0.7rem gray;
+}
+

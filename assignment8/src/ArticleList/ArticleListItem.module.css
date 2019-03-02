@@ -1,0 +1,61 @@
+.boxgroup {
+    width: auto;
+    border: 0.1rem solid #C90813;
+    margin: 4%;
+    /* border-radius: 1rem 1rem; */
+    background-color: whitesmoke;
+    /* box-shadow: 0.6rem 1rem 0.8rem #676767; */
+}
+
+#bgcolor {
+    background-image: linear-gradient(to right, #FEC2CC, #EEEEEE 15% );
+}
+
+.contentbox {
+    margin-top: 1rem;
+    margin-right: 3%;
+    text-align: left;
+    width: auto;
+}
+
+.image {
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.title {
+    color: #C90813;
+    margin-left: 3%;
+    font-size: 1rem;
+}
+
+.shortText {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 3%;
+}
+
+.author {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-left: 3%;
+}
+
+address:hover {
+    color: lightblue;
+}
+
+time {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+.author_time {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+

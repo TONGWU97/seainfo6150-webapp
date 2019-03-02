@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    height: 8rem;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C90813;
+    font-family: sans-serif;
+}
+
+h1 {
+    display: inline-flex;
+    margin-left: 0.8rem;
+}
+
+time {
+    display: inline-flex;
+    margin-right: 0.8rem;
+}
